@@ -1,0 +1,21 @@
+{
+  "name": "foo",
+  "comment": "foo comment",
+  "fields": [
+    {
+      "name": "f_key",
+      "type": "string"
+    },
+    {
+      "name": "f_val",
+      "dft": "aaa",
+      "nn": false,
+      "type": "string"
+    },
+    {
+      "name": "f_flag",
+      "nn": false,
+      "type": "string"
+    }
+  ]
+}

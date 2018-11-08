@@ -1,0 +1,20 @@
+{
+  "name": "fpm-dbm-cli",
+  "version": "1.0.1",
+  "description": "",
+  "main": "cli.js",
+  "scripts": {
+    "test": "node ./cli.js -f ./meta -d ./sql -o"
+  },
+  "author": "",
+  "license": "ISC",
+  "preferGlobal": true,
+  "bin": {
+    "fpm-dbm": "cli.js"
+  },
+  "dependencies": {
+    "commander": "^2.19.0",
+    "lodash": "^4.17.11",
+    "mkdirp": "^0.5.1"
+  }
+}
