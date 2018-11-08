@@ -28,3 +28,7 @@ starter/
 *.zip
 template/
 fpm-cms-*
+
+./sql
+./meta
+./workspace
