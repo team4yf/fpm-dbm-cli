@@ -39,16 +39,14 @@ const generate_one = meta => {
     }
     return r + '  ' + field_compiled(f) + '\n'
   }, '');
-  const SQL_TEMPLATE = `
-DROP TABLE IF EXISTS \`${ name }\`;
+  const SQL_TEMPLATE = `DROP TABLE IF EXISTS \`${ name }\`;
 CREATE TABLE IF NOT EXISTS \`${ name }\` (
   \`id\` bigint(11) NOT NULL AUTO_INCREMENT COMMENT 'ID',
   \`delflag\` tinyint(4) NOT NULL DEFAULT '0' COMMENT '删除标示',
   \`createAt\` bigint(20) NOT NULL DEFAULT '0' COMMENT '数据创建时间戳',
   \`updateAt\` bigint(20) NOT NULL DEFAULT '0' COMMENT '数据更新时间戳',
 ${ FIELDS }  PRIMARY KEY (\`id\`)
-) ENGINE=InnoDB AUTO_INCREMENT=${ AI_START } DEFAULT CHARSET=utf8 COMMENT='${ comment }';
-  `;
+) ENGINE=InnoDB AUTO_INCREMENT=${ AI_START } DEFAULT CHARSET=utf8 COMMENT='${ comment }';`;
   return SQL_TEMPLATE;
 }
 
